@@ -1,0 +1,4 @@
+2025-01-28 10:14:40 - INFO - Serveur Winsocket en écoute sur 127.0.0.1:65432...
+2025-01-28 10:14:43 - ERROR - Erreur sur le port 65432: [WinError 10048] Une seule utilisation de chaque adresse de socket (protocole/adresse réseau/port) est habituellement autorisée
+2025-01-28 10:14:49 - INFO - Connexion établie avec ('127.0.0.1', 50124)
+2025-01-28 10:15:03 - INFO - Connexion établie avec ('127.0.0.1', 50125)
