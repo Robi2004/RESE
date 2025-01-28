@@ -1,7 +1,7 @@
 import socket
 
 # Configuration du serveur
-HOST = "127.0.0.1"
+HOST = "10.1.1.112"
 PORT = 65432
 
 def send_request(command, payload=""):
@@ -9,7 +9,7 @@ def send_request(command, payload=""):
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client_socket.connect((HOST, PORT))
 
-        message = f"{command} {payload}".strip()  # Nettoie les espaces inutiles
+        message = f"{command} {payload}".strip()
         client_socket.sendall(message.encode("utf-8"))
 
         response = client_socket.recv(1024).decode("utf-8")

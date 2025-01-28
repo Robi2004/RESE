@@ -2,3 +2,29 @@
 2025-01-28 10:14:43 - ERROR - Erreur sur le port 65432: [WinError 10048] Une seule utilisation de chaque adresse de socket (protocole/adresse r�seau/port) est habituellement autoris�e
 2025-01-28 10:14:49 - INFO - Connexion �tablie avec ('127.0.0.1', 50124)
 2025-01-28 10:15:03 - INFO - Connexion �tablie avec ('127.0.0.1', 50125)
+2025-01-28 10:22:56 - INFO - Serveur Winsocket en écoute sur 127.0.0.1:65432...
+2025-01-28 10:23:04 - INFO - Connexion établie avec ('127.0.0.1', 50286)
+2025-01-28 10:24:42 - INFO - ✅ Serveur Winsocket en écoute sur 127.0.0.1:65432...
+2025-01-28 10:24:49 - ERROR - 🚨 Erreur sur le port 65432: [WinError 10048] Une seule utilisation de chaque adresse de socket (protocole/adresse réseau/port) est habituellement autorisée
+2025-01-28 10:24:59 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 50315)
+2025-01-28 10:25:03 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 50316)
+2025-01-28 10:25:03 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 50316)
+2025-01-28 10:25:23 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 50319)
+2025-01-28 10:25:27 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 50320)
+2025-01-28 10:25:33 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 50321)
+2025-01-28 10:25:33 - INFO - 💬 MESSAGE reçu de ('127.0.0.1', 50321): Test info
+2025-01-28 10:30:09 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-01-28 10:31:24 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-01-28 10:31:35 - INFO - 🔗 Connexion établie avec ('10.1.1.112', 50382)
+2025-01-28 10:31:35 - INFO - 📌 INFO demandé: DATE de ('10.1.1.112', 50382)
+2025-01-28 10:31:35 - INFO - 🔌 Connexion fermée avec ('10.1.1.112', 50382)
+2025-01-28 10:32:19 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 4687)
+2025-01-28 10:32:19 - INFO - 📌 INFO demandé: DATE de ('10.1.1.116', 4687)
+2025-01-28 10:32:19 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 4687)
+2025-01-28 10:32:50 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 4710)
+2025-01-28 10:32:50 - INFO - 💬 MESSAGE reçu de ('10.1.1.116', 4710): KYS
+2025-01-28 10:32:50 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 4710)
+2025-01-28 10:33:37 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-01-28 10:33:51 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 4755)
+2025-01-28 10:33:51 - INFO - 📌 INFO demandé: DATE de ('10.1.1.116', 4755)
+2025-01-28 10:33:51 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 4755)

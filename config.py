@@ -1,7 +1,7 @@
 import os
 
 # Configuration réseau
-HOST = "127.0.0.1"  # Adresse IP du serveur
+HOST = "0.0.0.0"  # Adresse IP du serveur
 PORT = 65432  # Port d'écoute
 
 # Paramètres des logs
