@@ -14,36 +14,30 @@ def connect_to_server():
 
     return host, port
 
-def send_request(host, port, message):
-    """Envoie une requête au serveur et affiche la réponse."""
+
+def send_request(host,port,command,payload):
     try:
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client_socket.connect((host, port))
 
-        # Recevoir le message de bienvenue du serveur
-        welcome_message = client_socket.recv(1024).decode("utf-8")
-        print("\n🌍 Réponse du serveur :\n" + welcome_message)
-
-        # Envoyer la requête de l'utilisateur
+        message = f"{command} {payload}".strip()
         client_socket.sendall(message.encode("utf-8"))
 
-        # Recevoir la réponse du serveur
         response = client_socket.recv(1024).decode("utf-8")
         client_socket.close()
 
         return response
     except ConnectionRefusedError:
-        return "❌ Erreur : Impossible de se connecter au serveur."
+        return "Erreur : Impossible de se connecter au serveur"
 
+# Interface CLI simple
 if __name__ == "__main__":
-    # Demander à l'utilisateur de saisir l'IP et le port du serveur
     host, port = connect_to_server()
-
     while True:
-        command = input("\n📝 Entrez votre commande (ou tapez EXIT pour quitter) : ").strip()
-        if command.upper() == "EXIT":
-            print("🔌 Déconnexion...")
+        commandEnter = input("Commande (GET, SET, SEND, SYS, EXIT) : ").strip()
+        commandEnter = commandEnter.split(":")
+        command = commandEnter[0]
+        if command.upper == "EXIT":
             break
-
-        response = send_request(host, port, command)
-        print("\n📩 Réponse du serveur :\n" + response)
+        payload = commandEnter[1]
+        print("Réponse :", send_request(host,port,command, payload))
