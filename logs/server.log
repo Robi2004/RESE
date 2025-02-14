@@ -115,3 +115,124 @@
 2025-01-28 11:03:37 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
 2025-01-28 11:04:15 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
 2025-01-28 11:04:34 - INFO - 🔗 Connexion établie avec ('10.1.1.112', 50704)
+2025-01-28 11:07:16 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-01-28 11:08:00 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 6417)
+2025-01-28 11:09:03 - ERROR - 🚨 Erreur avec ('10.1.1.116', 6417): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-01-28 11:09:03 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 6417)
+2025-01-28 11:12:38 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 6623)
+2025-01-28 11:14:29 - ERROR - 🚨 Erreur avec ('10.1.1.116', 6623): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-01-28 11:14:29 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 6623)
+2025-01-28 11:14:53 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 6722)
+2025-01-28 11:16:21 - ERROR - 🚨 Erreur avec ('10.1.1.116', 6722): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-01-28 11:16:21 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 6722)
+2025-01-28 11:16:47 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 6808)
+2025-01-28 11:19:03 - ERROR - 🚨 Erreur avec ('10.1.1.116', 6808): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-01-28 11:19:03 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 6808)
+2025-02-07 11:08:46 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:10:13 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59190)
+2025-02-07 11:11:26 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:11:39 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59276)
+2025-02-07 11:12:26 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:12:38 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59327)
+2025-02-07 11:15:33 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:15:57 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59502)
+2025-02-07 11:17:12 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:18:29 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:21:41 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:23:32 - ERROR - 🚨 Erreur sur le port 65432: [WinError 10049] L’adresse demandée n’est pas valide dans son contexte
+2025-02-07 11:24:44 - INFO - ✅ Serveur Winsocket en écoute sur 127.0.0.1:65432...
+2025-02-07 11:24:54 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59976)
+2025-02-07 11:24:54 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 59976)
+2025-02-07 11:24:54 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 59976)
+2025-02-07 11:47:25 - INFO - ✅ Serveur Winsocket en écoute sur 127.0.0.1:65432...
+2025-02-07 11:48:05 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62180)
+2025-02-07 11:48:05 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62180)
+2025-02-07 11:48:20 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62195)
+2025-02-07 11:48:20 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62195)
+2025-02-07 11:48:29 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62203)
+2025-02-07 11:48:29 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62203)
+2025-02-07 11:49:04 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62246)
+2025-02-07 11:49:04 - INFO - 📌 INFO demandé: GET de ('127.0.0.1', 62246)
+2025-02-07 11:49:04 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62246)
+2025-02-07 11:49:08 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62262)
+2025-02-07 11:49:08 - INFO - 📌 INFO demandé: GET de ('127.0.0.1', 62262)
+2025-02-07 11:49:08 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62262)
+2025-02-07 11:49:50 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62312)
+2025-02-07 11:49:50 - INFO - 📌 INFO demandé: GET de ('127.0.0.1', 62312)
+2025-02-07 11:49:50 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62312)
+2025-02-07 11:50:10 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62337)
+2025-02-07 11:50:10 - INFO - 📌 INFO demandé: GET de ('127.0.0.1', 62337)
+2025-02-07 11:50:10 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62337)
+2025-02-07 11:51:17 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62417)
+2025-02-07 11:51:17 - INFO - 📌 INFO demandé: GET de ('127.0.0.1', 62417)
+2025-02-07 11:51:17 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62417)
+2025-02-07 11:51:43 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62456)
+2025-02-07 11:51:43 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 62456)
+2025-02-07 11:51:43 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62456)
+2025-02-07 11:56:57 - ERROR - 🚨 Erreur sur le port 65432: [WinError 10049] L’adresse demandée n’est pas valide dans son contexte
+2025-02-07 11:59:32 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 11:59:41 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 63049)
+2025-02-07 11:59:41 - INFO - 📌 INFO demandé: DATA de ('10.1.1.116', 63049)
+2025-02-07 11:59:41 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 63049)
+2025-02-07 11:59:52 - INFO - 🔗 Connexion établie avec ('10.1.1.116', 63059)
+2025-02-07 11:59:52 - INFO - 📌 INFO demandé: DATA de ('10.1.1.116', 63059)
+2025-02-07 11:59:52 - INFO - 🔌 Connexion fermée avec ('10.1.1.116', 63059)
+2025-02-07 12:05:23 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63350)
+2025-02-07 12:05:23 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63350)
+2025-02-07 12:05:23 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63350)
+2025-02-07 12:06:57 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63429)
+2025-02-07 12:06:57 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63429)
+2025-02-07 12:06:57 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63429)
+2025-02-07 12:07:13 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63443)
+2025-02-07 12:07:13 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63443)
+2025-02-07 12:07:13 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63443)
+2025-02-07 12:09:04 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63533)
+2025-02-07 12:09:04 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63533)
+2025-02-07 12:09:04 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63533)
+2025-02-07 12:09:23 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:09:31 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63563)
+2025-02-07 12:09:31 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63563)
+2025-02-07 12:09:31 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63563)
+2025-02-07 12:10:14 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:10:24 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63617)
+2025-02-07 12:10:24 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63617)
+2025-02-07 12:10:24 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63617)
+2025-02-07 12:10:58 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:11:08 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63657)
+2025-02-07 12:11:08 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63657)
+2025-02-07 12:11:08 - ERROR - 🚨 Erreur avec ('127.0.0.1', 63657): 'tuple' object has no attribute 'encode'
+2025-02-07 12:11:08 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63657)
+2025-02-07 12:11:37 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:11:45 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63690)
+2025-02-07 12:11:45 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63690)
+2025-02-07 12:11:45 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63690)
+2025-02-07 12:12:19 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:12:27 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63723)
+2025-02-07 12:12:27 - INFO - 📌 INFO demandé: DATA de ('127.0.0.1', 63723)
+2025-02-07 12:12:27 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63723)
+2025-02-07 12:12:56 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:13:03 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63754)
+2025-02-07 12:13:03 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 63754)
+2025-02-07 12:13:03 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63754)
+2025-02-07 12:14:31 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-07 12:14:44 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63841)
+2025-02-07 12:14:44 - INFO - 💬 MESSAGE reçu de ('127.0.0.1', 63841): SINGE
+2025-02-07 12:14:44 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 63841)
+2025-02-14 10:14:55 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-14 10:15:38 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 62477)
+2025-02-14 10:15:38 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 62477)
+2025-02-14 10:15:38 - INFO - 🔌 Connexion fermée avec ('127.0.0.1', 62477)
+2025-02-14 10:32:22 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-14 10:32:40 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 63389)
+2025-02-14 10:32:40 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 63389)
+2025-02-14 10:47:27 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-02-14 10:47:34 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 64750)
+2025-02-14 10:47:34 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 64750)
+2025-02-14 10:47:58 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 64771)
+2025-02-14 10:47:58 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 64771)
+2025-02-14 10:48:01 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 64774)
+2025-02-14 10:48:01 - ERROR - ❌ Requête invalide de ('127.0.0.1', 64774): EXIT
+2025-02-14 10:50:00 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 64875)
+2025-02-14 10:50:00 - INFO - 📝 UPDATE demandé de ('127.0.0.1', 64875): JE SUIS GAY
+2025-02-14 10:52:20 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 64979)
+2025-02-14 10:52:20 - INFO - ⚙ SYSTEM demandé: STATUS de ('127.0.0.1', 64979)

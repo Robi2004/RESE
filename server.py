@@ -25,6 +25,9 @@ def handle_client(client_socket, addr):
         response = "ERR_INVALID_REQUEST"
 
         match command:
+            case "EXIT":
+                client_socket.close()
+                utils.log_message(f"🔌 Connexion fermée avec {addr}")
             case "GET":
                 utils.log_message(f"📌 INFO demandé: {payload} de {addr}")
                 match payload:
@@ -55,10 +58,6 @@ def handle_client(client_socket, addr):
     
     except Exception as e:
         utils.log_error(f"🚨 Erreur avec {addr}: {e}")
-    
-    finally:
-        client_socket.close()
-        utils.log_message(f"🔌 Connexion fermée avec {addr}")
 
 def start_server():
     """Démarre le serveur Winsocket et gère plusieurs connexions."""

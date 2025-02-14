@@ -36,8 +36,10 @@ if __name__ == "__main__":
     while True:
         commandEnter = input("Commande (GET, SET, SEND, SYS, EXIT) : ").strip()
         commandEnter = commandEnter.split(":")
-        command = commandEnter[0]
-        if command.upper == "EXIT":
+        command = commandEnter[0].upper()
+        if command == "EXIT":
             break
-        payload = commandEnter[1]
-        print("Réponse :", send_request(host,port,command, payload))
+        else:
+            payload = commandEnter[1].upper()
+            print("Réponse :", send_request(host,port,command, payload))
+    print("Réponse :", send_request(host,port,"EXIT", ""))
