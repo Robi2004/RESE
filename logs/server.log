@@ -236,3 +236,46 @@
 2025-02-14 10:50:00 - INFO - 📝 UPDATE demandé de ('127.0.0.1', 64875): JE SUIS GAY
 2025-02-14 10:52:20 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 64979)
 2025-02-14 10:52:20 - INFO - ⚙ SYSTEM demandé: STATUS de ('127.0.0.1', 64979)
+2025-06-06 09:05:44 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-06-06 09:06:33 - INFO - ✅ Serveur Winsocket en écoute sur 192.168.152.1:65432...
+2025-06-06 09:07:49 - INFO - ✅ Serveur Winsocket en écoute sur 192.168.152.1:65432...
+2025-06-06 09:09:04 - INFO - ✅ Serveur Winsocket en écoute sur 10.1.1.112:65432...
+2025-06-06 09:09:16 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13632)
+2025-06-06 09:09:16 - INFO - 📌 INFO demandé: DATE de ('10.1.1.122', 13632)
+2025-06-06 09:09:24 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13634)
+2025-06-06 09:09:24 - INFO - 💬 MESSAGE reçu de ('10.1.1.122', 13634): NIGGA
+2025-06-06 09:09:34 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13638)
+2025-06-06 09:09:34 - ERROR - ❌ Requête invalide de ('10.1.1.122', 13638): EXIT
+2025-06-06 09:10:01 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13642)
+2025-06-06 09:10:01 - INFO - 📌 INFO demandé: TIME de ('10.1.1.122', 13642)
+2025-06-06 09:10:05 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13643)
+2025-06-06 09:10:05 - INFO - 📌 INFO demandé: IP de ('10.1.1.122', 13643)
+2025-06-06 09:10:09 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13644)
+2025-06-06 09:10:09 - INFO - 📌 INFO demandé: PORT de ('10.1.1.122', 13644)
+2025-06-06 09:10:19 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13648)
+2025-06-06 09:10:19 - INFO - ⚙ SYSTEM demandé: STATUS de ('10.1.1.122', 13648)
+2025-06-06 09:11:17 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13654)
+2025-06-06 09:11:17 - INFO - 📝 UPDATE demandé de ('10.1.1.122', 13654): TXT.TXT,HELLO
+2025-06-06 09:11:33 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13657)
+2025-06-06 09:11:33 - INFO - 📝 UPDATE demandé de ('10.1.1.122', 13657): TXT,HELLO
+2025-06-06 09:12:37 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13662)
+2025-06-06 09:12:37 - INFO - 📝 UPDATE demandé de ('10.1.1.122', 13662): TXT.TXT,HELLO
+2025-06-06 09:14:23 - INFO - ✅ Serveur Winsocket en écoute sur 10.1.1.112:65432...
+2025-06-06 09:14:39 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13672)
+2025-06-06 09:14:39 - INFO - 📝 UPDATE demandé de ('10.1.1.122', 13672): TXT.TXT,HELLO
+2025-06-06 09:14:57 - INFO - 🔗 Connexion établie avec ('10.1.1.122', 13676)
+2025-06-06 09:14:57 - INFO - 📝 UPDATE demandé de ('10.1.1.122', 13676): TXT.TXT, HELLO
+2025-06-06 09:17:59 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-06-06 09:18:26 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-06-06 09:19:24 - INFO - ✅ Serveur Winsocket en écoute sur 0.0.0.0:65432...
+2025-06-06 09:20:31 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59525)
+2025-06-06 09:20:31 - INFO - 📌 INFO demandé: DATE de ('127.0.0.1', 59525)
+2025-06-06 09:21:16 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59564)
+2025-06-06 09:21:16 - INFO - 📝 UPDATE demandé de ('127.0.0.1', 59564): txt, hello
+2025-06-06 09:21:16 - INFO - Fichier txt mis à jour.
+2025-06-06 09:21:35 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59608)
+2025-06-06 09:21:35 - INFO - 📝 UPDATE demandé de ('127.0.0.1', 59608): txt, hello mon garrrrsss
+2025-06-06 09:21:35 - INFO - Fichier txt mis à jour.
+2025-06-06 09:21:45 - INFO - 🔗 Connexion établie avec ('127.0.0.1', 59620)
+2025-06-06 09:21:45 - INFO - 📝 UPDATE demandé de ('127.0.0.1', 59620): txt.txt, YOOO
+2025-06-06 09:21:45 - INFO - Fichier txt.txt mis à jour.

@@ -35,11 +35,16 @@ if __name__ == "__main__":
     host, port = connect_to_server()
     while True:
         commandEnter = input("Commande (GET, SET, SEND, SYS, EXIT) : ").strip()
-        commandEnter = commandEnter.split(":")
-        command = commandEnter[0].upper()
+        command = commandEnter.split(":")[0].upper()
+        
         if command == "EXIT":
             break
+        elif command == "SET":
+            filename = input("Nom du fichier : ").strip()
+            content = input("Contenu : ").strip()
+            payload = f"{filename}, {content}"
         else:
-            payload = commandEnter[1].upper()
-            print("Réponse :", send_request(host,port,command, payload))
+            payload = commandEnter.split(":", 1)[1].strip().upper() if ":" in commandEnter else ""
+            
+        print("Réponse :", send_request(host,port,command, payload))
     print("Réponse :", send_request(host,port,"EXIT", ""))

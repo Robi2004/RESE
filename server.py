@@ -49,8 +49,13 @@ def handle_client(client_socket, addr):
             case "SET":
                 utils.log_message(f"📝 UPDATE demandé de {addr}: {payload}")
                 try:
-                    filename, content = payload.split(", ")
-                    response = utils.save_to_file(filename, content)
+                    parts = payload.split(", ", 1)
+                    if len(parts) != 2:
+                        response = utils.get_error_message("ERR_INVALID_REQUEST")
+                    else:
+                        filename = parts[0].strip().lower()
+                        content = parts[1]
+                        response = utils.save_to_file(filename, content)
                 except Exception:
                     response = utils.get_error_message("ERR_INVALID_REQUEST")
 
