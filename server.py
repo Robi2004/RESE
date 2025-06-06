@@ -2,13 +2,12 @@ import socket
 import config
 import utils
 import datetime
-import os
 import psutil
 import threading
 
 def handle_client(client_socket, addr):
     """Gère la connexion avec un client spécifique."""
-    utils.log_message(f"🔗 Connexion établie avec {addr}")
+    utils.log_message(f"Connexion établie avec {addr}")
 
     try:
         data = client_socket.recv(config.BUFFER_SIZE).decode("utf-8").strip()
@@ -34,7 +33,7 @@ def handle_client(client_socket, addr):
                 client_socket.close()
                 return
             case "GET":
-                utils.log_message(f"📌 INFO demandé: {payload} de {addr}")
+                utils.log_message(f"INFO demandé: {payload} de {addr}")
                 match payload:
                     case "DATE":
                         response = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -45,14 +44,14 @@ def handle_client(client_socket, addr):
                     case "PORT":
                         response = str(config.PORT)
             case "SEND":
-                utils.log_message(f"💬 MESSAGE reçu de {addr}: {payload}")
+                utils.log_message(f"MESSAGE reçu de {addr}: {payload}")
                 response = f"Message reçu: {payload}"
             case "SYS":
-                utils.log_message(f"⚙ SYSTEM demandé: {payload} de {addr}")
+                utils.log_message(f"SYSTEM demandé: {payload} de {addr}")
                 if payload == "STATUS":
                     response = f"CPU: {psutil.cpu_percent()}%, RAM: {psutil.virtual_memory().percent}%"
             case "SET":
-                utils.log_message(f"📝 UPDATE demandé de {addr}: {payload}")
+                utils.log_message(f"UPDATE demandé de {addr}: {payload}")
                 try:
                     if ":" in payload:  # Utiliser ':' comme séparateur
                         filename, content = payload.split(":", 1)
@@ -68,7 +67,7 @@ def handle_client(client_socket, addr):
         client_socket.sendall(response.encode("utf-8"))
     
     except Exception as e:
-        utils.log_error(f"🚨 Erreur avec {addr}: {e}")
+        utils.log_error(f"Erreur avec {addr}: {e}")
 
 def start_server():
     """Démarre le serveur Winsocket et gère plusieurs connexions."""
@@ -77,7 +76,7 @@ def start_server():
     try:
         server_socket.bind((config.HOST, config.PORT))
         server_socket.listen(config.MAX_CONNECTIONS)
-        utils.log_message(f"✅ Serveur Winsocket en écoute sur {config.HOST}:{config.PORT}...")
+        utils.log_message(f"Serveur Winsocket en écoute sur {config.HOST}:{config.PORT}...")
 
         while True:
             client_socket, addr = server_socket.accept()
@@ -85,7 +84,7 @@ def start_server():
             client_thread.start()
 
     except OSError as e:
-        utils.log_error(f"🚨 Erreur sur le port {config.PORT}: {e}")
+        utils.log_error(f"Erreur sur le port {config.PORT}: {e}")
     
     finally:
         server_socket.close()
