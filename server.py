@@ -15,19 +15,24 @@ def handle_client(client_socket, addr):
         if not data:
             return
 
-        valid, response = utils.validate_request(data)
-        if not valid:
-            utils.log_error(f"❌ Requête invalide de {addr}: {data}")
-            client_socket.sendall(response.encode("utf-8"))
-            return
+        # Traitement de la commande côté serveur
+        if ":" in data:
+            command, payload = data.split(":", 1)
+            command = command.strip().upper()
+            payload = payload.strip().upper()
+        else:
+            command = data.strip().upper()
+            payload = ""
 
-        command, payload = response
         response = "ERR_INVALID_REQUEST"
 
         match command:
             case "EXIT":
-                client_socket.close()
                 utils.log_message(f"🔌 Connexion fermée avec {addr}")
+                response = "Au revoir!"
+                client_socket.sendall(response.encode("utf-8"))
+                client_socket.close()
+                return
             case "GET":
                 utils.log_message(f"📌 INFO demandé: {payload} de {addr}")
                 match payload:

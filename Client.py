@@ -34,12 +34,8 @@ def send_request(host,port,command,payload):
 if __name__ == "__main__":
     host, port = connect_to_server()
     while True:
-        commandEnter = input("Commande (GET, SET, SEND, SYS, EXIT) : ").strip()
-        commandEnter = commandEnter.split(":")
-        command = commandEnter[0].upper()
-        if command == "EXIT":
+        commandEnter = input("Commande (GET:DATE, SET:filename,content, SEND:message, SYS:STATUS, EXIT) : ").strip()
+        print("Réponse :", send_request(host, port, commandEnter, ""))
+        if commandEnter.upper().startswith("EXIT"):
             break
-        else:
-            payload = commandEnter[1].upper()
-            print("Réponse :", send_request(host,port,command, payload))
-    print("Réponse :", send_request(host,port,"EXIT", ""))
+    print("Merci, Au revoir !")
