@@ -36,21 +36,19 @@ def get_error_message(error_code):
     """Retourne le message d'erreur associé à un code d'erreur."""
     return config.ERROR_MESSAGES.get(error_code, "Erreur inconnue.")
 
-def validate_request(data):
-    """Valide la requête reçue et retourne True si correcte, sinon un code d'erreur."""
-    parts = data.strip().split(" ", 1)
-    if len(parts) < 2:
-        return False, "ERR_INVALID_REQUEST"
-    return True, (parts[0].upper(), parts[1])
-
 def save_to_file(filename, content):
     """Écrit du contenu dans un fichier dans le dossier files/."""
+    # Validation du nom de fichier
+    if not filename or len(filename) > 255 or any(c in filename for c in r'\/:*?"<>|'):
+        log_error(f"Nom de fichier invalide: {filename}")
+        return get_error_message("ERR_FILE_NAME")
+
     file_path = os.path.join(config.FILES_DIR, filename)
     try:
-        with open(file_path, "w") as f:
+        with open(file_path, "w", encoding="utf-8") as f:
             f.write(content)
         log_message(f"Fichier {filename} mis à jour.")
         return "Fichier mis à jour avec succès"
     except Exception as e:
         log_error(f"Erreur lors de l'écriture du fichier {filename}: {e}")
-        return "ERR_INTERNAL"
+        return get_error_message("ERR_INTERNAL")

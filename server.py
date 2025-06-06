@@ -19,7 +19,7 @@ def handle_client(client_socket, addr):
         if ":" in data:
             command, payload = data.split(":", 1)
             command = command.strip().upper()
-            payload = payload.strip().upper()
+            payload = payload.strip()  # Ne pas convertir en majuscules
         else:
             command = data.strip().upper()
             payload = ""
@@ -54,14 +54,15 @@ def handle_client(client_socket, addr):
             case "SET":
                 utils.log_message(f"📝 UPDATE demandé de {addr}: {payload}")
                 try:
-                    parts = payload.split(", ", 1)
-                    if len(parts) != 2:
-                        response = utils.get_error_message("ERR_INVALID_REQUEST")
-                    else:
-                        filename = parts[0].strip().lower()
-                        content = parts[1]
+                    if ":" in payload:  # Utiliser ':' comme séparateur
+                        filename, content = payload.split(":", 1)
+                        filename = filename.strip().lower()  # Nom de fichier en minuscules
+                        content = content.strip()  # Contenu tel quel
                         response = utils.save_to_file(filename, content)
-                except Exception:
+                    else:
+                        response = utils.get_error_message("ERR_INVALID_REQUEST")
+                except Exception as e:
+                    utils.log_error(f"Erreur SET: {e}")
                     response = utils.get_error_message("ERR_INVALID_REQUEST")
 
         client_socket.sendall(response.encode("utf-8"))

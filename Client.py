@@ -15,13 +15,13 @@ def connect_to_server():
     return host, port
 
 
-def send_request(host,port,command,payload):
+def send_request(host, port, command, payload):
     try:
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client_socket.connect((host, port))
 
-        message = f"{command} {payload}".strip()
-        client_socket.sendall(message.encode("utf-8"))
+        # Envoyer la commande telle quelle, sans modification
+        client_socket.sendall(command.encode("utf-8"))
 
         response = client_socket.recv(1024).decode("utf-8")
         client_socket.close()
@@ -38,4 +38,3 @@ if __name__ == "__main__":
         print("Réponse :", send_request(host, port, commandEnter, ""))
         if commandEnter.upper().startswith("EXIT"):
             break
-    print("Merci, Au revoir !")
